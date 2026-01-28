@@ -165,6 +165,15 @@ a:hover {
     color: var(--nd-gold);
 }
 
+/* Sections */
+.section {
+    padding: var(--spacing-lg) 0;
+}
+
+.section-alt {
+    background-color: var(--white);
+}
+
 /* Mobile Menu */
 .mobile-menu-btn {
     display: none;
