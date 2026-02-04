@@ -3,8 +3,9 @@
     --nd-navy: #0C2340;
     --nd-gold: #C99700;
     --nd-metallic-gold: #AE9142;
-    --nd-light-gold: #E4D8B4; /* Supporting color */
-    
+    --nd-light-gold: #E4D8B4;
+    /* Supporting color */
+
     /* Neutrals */
     --white: #FFFFFF;
     --off-white: #F8F9FA;
@@ -38,9 +39,9 @@
     --radius-lg: 16px;
 
     /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -56,16 +57,31 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-display);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--spacing-sm);
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; color: var(--nd-navy); }
-h3 { font-size: 1.75rem; color: var(--nd-metallic-gold); }
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--nd-navy);
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: var(--nd-metallic-gold);
+}
 
 a {
     color: var(--nd-navy);
@@ -139,15 +155,14 @@ a:hover {
 }
 
 .logo {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--white);
-    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
 }
 
-.logo span {
-    color: var(--nd-gold);
+.logo img {
+    height: 50px;
+    /* Adjust height as needed */
+    width: auto;
 }
 
 .nav-links {
@@ -161,7 +176,8 @@ a:hover {
     font-weight: 500;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--nd-gold);
 }
 
@@ -185,7 +201,8 @@ a:hover {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* simple hide for now, JS will toggle */
+        display: none;
+        /* simple hide for now, JS will toggle */
         position: absolute;
         top: 100%;
         left: 0;
@@ -212,6 +229,11 @@ a:hover {
     padding: var(--spacing-lg) 0;
     margin-top: var(--spacing-xl);
     text-align: center;
+}
+
+.footer .logo {
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
 }
 
 .footer-links {
